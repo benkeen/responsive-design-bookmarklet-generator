@@ -1,0 +1,90 @@
+body {
+	margin: 30px;
+}
+body, div, p {
+	font-family: verdana;
+	font-size: 8pt;
+	line-height: 17pt;
+}
+#nav_column_content, #hide_nav_link { display: block; }
+#show_nav_link { display: none; }
+.clear { clear: left; }
+#bm_generate ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+#bm_generate .heading {
+	font-weight: bold;
+}
+#bm_generate ul li {
+	float: left;
+}
+#bm_generate .col0 {
+	width: 20px;
+	display: block;
+}
+#bm_generate .row {
+	background-color: #f2f2f2;
+	height: 22px;
+	border-bottom:1px solid white;
+	width: 410px;
+}
+#bm_generate .sortable .col0 {
+	background: transparent url(sort.png) center center no-repeat;
+	cursor: move;
+}
+#bm_generate .col1 {
+	width: 80px;
+}
+#bm_generate .col1 input {
+	width: 65px;
+}
+#bm_generate .col2 {
+	width: 80px;
+}
+#bm_generate .col2 input {
+	width: 65px;
+}
+#bm_generate .col3 {
+	width: 200px;
+}
+#bm_generate .col3 input {
+	width: 195px;
+}
+#bm_generate .del {
+	width: 20px;
+	padding: 0px 4px;
+	background-color: #990000;
+	color: white;
+	text-align: center;
+	border-radius: 2px;
+	cursor: pointer;
+}
+#bm_generate .del:hover {
+	background-color: #333333;
+}
+#add_row_link {
+	color: #0033cc;
+	text-decoration: none;
+	cursor: pointer;
+}
+#add_row_link:hover {
+	text-decoration: underline;
+}
+#generate_btn {
+	background-color: green;
+	padding: 2px 8px;
+	border-radius: 3px;
+	color: white;
+	cursor: pointer;
+}
+#generate_btn:hover {
+	background-color: #0055cc;
+}
+#bookmarklet_link {
+	padding: 20px;
+	background-color: #f2f2f2;
+	border: 1px solid #dddddd;
+	width: 160px;
+}

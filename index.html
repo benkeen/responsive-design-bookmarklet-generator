@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Design Test Bookmarklet</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+  <script src="script.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css"></link>
+</head>
+<body>
+
+	<h1>Responsive Design Test Bookmarklet</h1>
+
+    <p>
+      This was inspired by, and based on <a href="https://twitter.com/#!/lensco">@lensco</a>'s excellent <a
+      href="http://bricss.net/post/16538278376/simple-responsive-design-test-page">Simple Responsive
+      Design Test Page</a>. It lets you view any webpage in multiple screen sizes, simulating the viewport of different
+      devices. After getting such a positive response to my original post, I thought I'd expand on it a little. Since
+      people are obviously targeting different device screen sizes with their projects, the form below
+      now lets you generate a <i>custom</i> bookmarklet that displays only those device sizes you're interested in.
+    </p>
+
+    <p>
+      A big thanks to Alaska Airlines for the delayed flight that made this possible, and the really boring
+      project that I know I <i>should</i> be working on, but can't find the motivation. Urgh.
+    </p>
+
+    <hr size="1" />
+
+    <h4>1. Select Device Sizes</h4>
+
+    <div id="bm_generate">
+      <ul class="heading">
+        <li class="col0">&nbsp;</li>
+        <li class="col1">Width (px)</li>
+        <li class="col2">Height (px)</li>
+        <li class="col3">Label</li>
+        <li class="col4 colN del"></li>
+      </ul>
+      <div class="clear"></div>
+      <div class="sortable">
+        <div class="row">
+          <ul>
+            <li class="col0 sort">&nbsp;</li>
+            <li class="col1"><input type="text" value="240" /></li>
+            <li class="col2"><input type="text" value="320" /></li>
+            <li class="col3"><input type="text" value="mobile" /></li>
+            <li class="col4 colN del">x</li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+        <div class="row">
+          <ul>
+            <li class="col0 sort">&nbsp;</li>
+            <li class="col1"><input type="text" value="320" /></li>
+            <li class="col2"><input type="text" value="480" /></li>
+            <li class="col3"><input type="text" value="mobile" /></li>
+            <li class="col4 colN del">x</li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+        <div class="row">
+          <ul>
+            <li class="col0 sort">&nbsp;</li>
+            <li class="col1"><input type="text" value="480" /></li>
+            <li class="col2"><input type="text" value="640" /></li>
+            <li class="col3"><input type="text" value="small tablet" /></li>
+            <li class="col4 colN del">x</li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+        <div class="row">
+          <ul>
+            <li class="col0 sort">&nbsp;</li>
+            <li class="col1"><input type="text" value="768" /></li>
+            <li class="col2"><input type="text" value="1024" /></li>
+            <li class="col3"><input type="text" value="tablet - portrait" /></li>
+            <li class="col4 colN del">x</li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+        <div class="row">
+          <ul>
+            <li class="col0 sort">&nbsp;</li>
+            <li class="col1"><input type="text" value="1024" /></li>
+            <li class="col2"><input type="text" value="768" /></li>
+            <li class="col3"><input type="text" value="tablet - landscape" /></li>
+            <li class="col4 colN del">x</li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+        <div class="row">
+          <ul>
+            <li class="col0 sort">&nbsp;</li>
+            <li class="col1"><input type="text" value="1200" /></li>
+            <li class="col2"><input type="text" value="800" /></li>
+            <li class="col3"><input type="text" value="desktop" /></li>
+            <li class="col4 colN del">x</li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+
+    <p id="add_row_link">Add row &raquo;</p>
+
+    <h4>2. Generate the Bookmarklet</h4>
+
+    <span id="generate_btn">Generate!</span>
+
+    <p>
+      Drag the following link to your bookmark toolbar in your browser, and click on it. Man, I love javascript.
+    </p>
+
+    <p id="bookmarklet_link"></p>
+
+    <br />
+
+
+<hr size="1" />
+
+By <a href="https://twitter.com/#!/vancouverben">@vancouverben</a>, found on
+<a href="">github here</a>.
+
+</body>
+</html>
