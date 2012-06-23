@@ -5,7 +5,7 @@ This is a simple script that lets you view any webpage in multiple screen sizes,
 
 ## Demo
 Check out my site for a working version of the module:
-http://www.benjaminkeen.com/misc/bricss/
+http://www.benjaminkeen.com/open-source-projects/smaller-projects/responsive-design-bookmarklet/
 
 ## Changelog
 
